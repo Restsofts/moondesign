@@ -18,7 +18,7 @@
                 --color-primary: #140c3f; /* Custom primary color */
                 --color-background: #000000; /* Black background */
                 --color-text: #FFFFFF; /* White text */
-                --color-hover: #3B82F6; /* Blue for hover effect */
+                --color-hover: #9ca3af; /* Lighter gray color for hover effect */
             }
         }
 
@@ -31,6 +31,10 @@
 
         .bg-primary {
             background-color: var(--color-primary);
+        }
+
+        .hover-primary:hover {
+            color: var(--color-hover);
         }
 
         .bg-hover:hover {
@@ -72,10 +76,10 @@
             <!-- Updated logo reference -->
             <img src="assets/images/moon-logo.svg" alt="Moon Design Logo" class="h-12">
             <nav class="space-x-4">
-                <a href="#home" class="text-white hover:text-blue-400">Home</a>
-                <a href="#about" class="text-white hover:text-blue-400">About</a>
-                <a href="#services" class="text-white hover:text-blue-400">Services</a>
-                <a href="#contact" class="text-white hover:text-blue-400">Contact</a>
+                <a href="#home" class="text-white hover-primary">Home</a>
+                <a href="#about" class="text-white hover-primary">About</a>
+                <a href="#services" class="text-white hover-primary">Services</a>
+                <a href="#contact" class="text-white hover-primary">Contact</a>
             </nav>
         </div>
     </header>
@@ -85,7 +89,7 @@
         <!-- Overlay -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
         
-        <div class="relative z-10">
+        <div class="relative z-10 px-4">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Moon Design</h1>
             <p class="text-lg md:text-xl mb-6">Crafting unique logos and stunning designs.</p>
             <a href="#contact" class="bg-primary text-white py-3 px-6 rounded-full bg-hover transition duration-300">Get in Touch</a>
@@ -93,9 +97,9 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="h-screen flex items-center justify-center bg-black">
-        <div class="container mx-auto text-center">
-            <img src="assets/images/moon-logo.svg" alt="Moon Design Logo" class="h-48 mx-auto mb-4"> <!-- Increased the size of the logo and centered it -->
+    <section id="about" class="flex items-center justify-center bg-black py-24">
+        <div class="container mx-auto text-center px-4">
+            <img src="assets/images/moon-logo.svg" alt="Moon Design Logo" class="h-48 mx-auto mb-4">
 
             <h2 class="text-3xl font-bold mb-4">About Moon Design</h2>
             <p class="max-w-2xl mx-auto">Moon Design is dedicated to crafting high-quality logos and graphic designs using the latest tools and techniques in Photoshop and Illustrator. Our passion for creativity drives us to deliver unique designs that stand out.</p>
@@ -103,8 +107,8 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="h-screen flex items-center justify-center bg-black">
-        <div class="container mx-auto">
+    <section id="services" class="flex items-center justify-center bg-black py-24">
+        <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="p-5 text-center">
@@ -142,8 +146,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-black">
-        <div class="container mx-auto text-center">
+    <section id="contact" class="py-48 bg-black">
+        <div class="container mx-auto text-center px-4">
             <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
             <p class="mb-6">Get in touch with us for more information or to get started on your project.</p>
             <div class="mb-6">
@@ -152,9 +156,9 @@
                 <p><i class="fas fa-map-marker-alt mr-2"></i> Address: 123 Design Street, Creativity City, 45678</p>
             </div>
             <div class="w-full h-64">
-                <!-- Replace src with your Google Maps embed link -->
+                <!-- Google Maps Embed for Moon Design -->
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098346!2d144.9537353155045!3d-37.81627917975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e1d9aa70e085!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1633155908330!5m2!1sen!2sau"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115.84305521813507!2d-0.5881501044415803!3d34.882228020853396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128cbd7a46cf1601%3A0x4c2cf0bda730054a!2zTU9PTiBERVNJQ04gKOaIkOaIv-ailSAmWmGWIiwgMzQwMDA!5e0!3m2!1sen!2sus!4v1694795303246!5m2!1sen!2sus"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -165,10 +169,10 @@
         <div class="container mx-auto">
             <div class="flex justify-center space-x-4 mb-4">
                 <!-- Add social media icons -->
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover-primary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover-primary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover-primary"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover-primary"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <p>&copy; 2024 Moon Design. All rights reserved.</p>
         </div>
